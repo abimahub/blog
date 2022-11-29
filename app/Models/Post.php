@@ -25,6 +25,7 @@ class Post
     
     public static function all()
     {
+
       return collect(File::files(resource_path('posts')))
 
       ->map(fn($file) => YamlFrontMatter::parseFile($file))
