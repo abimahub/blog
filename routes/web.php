@@ -23,10 +23,11 @@ Route::get('/', function () {
 });
 
 Route::get('posts/{post}', function ($slug) {
-    return view('post', [
-        'post' => Post::find($slug)
+       return view('post', [
+        'post' =>  Post::findOrFail($slug)
     ]);
-})->where('post', '[A-z_\-]+');
+});
+//->where('post', '[A-z_\-]+');  //is the regex, however using layouts means this is not necessary.
 // this works fine but is not the most elegant solution
 // set out what you want to do in a comment, then craft the code to fit that comment:
 // Find a post by it's slug and pass it to a view called "post"

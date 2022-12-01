@@ -1,8 +1,5 @@
-<!DOCTYPE html>
-    <title>Laravel Blog</title>
-    <link rel="stylesheet" href="/app.css">
-    
-    <body> 
+<x-layout>
+
     <article>
       <h1><?= $post->title; ?></h1>
       <div>
@@ -10,6 +7,8 @@
       <p><?= $post->body; ?></p>
       </div>
     </article>
-    <br><br>
-    <a href="/">Go Back</a>
-    </body>
+   <br><br>
+   <footer> <a href="/">Go Back</a>
+  </footer>
+    
+  </x-layout>  
