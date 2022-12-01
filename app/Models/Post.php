@@ -37,8 +37,8 @@ class Post
             $document->date,
             $document->body()  
         ))
-        ->sortByDesc('date'); 
-        #->sortBy('date'); # default ascending order
+       # ->sortByDesc('date'); 
+        ->sortBy('date'); # default ascending order
 
       });
      
