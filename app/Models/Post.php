@@ -25,22 +25,24 @@ class Post
     
     public static function all()
     {
+      return cache()->rememberForever('posts.all', function() {
+        return collect(File::files(resource_path('posts')))
 
-      return collect(File::files(resource_path('posts')))
+        ->map(fn($file) => YamlFrontMatter::parseFile($file))
+  
+        ->map(fn($document) => new Post(
+            $document->title,
+            $document->slug,
+            $document->excerpt,
+            $document->date,
+            $document->body()  
+        ))
+        ->sortByDesc('date'); 
+        #->sortBy('date'); # default ascending order
 
-      ->map(fn($file) => YamlFrontMatter::parseFile($file))
-
-      ->map(fn($document) => new Post(
-          $document->title,
-          $document->slug,
-          $document->excerpt,
-          $document->date,
-          $document->body()  
-      ))
-      ->sortByDesc('date');
-    }
-
-    
+      });
+     
+    } 
 
   public static function find($slug)
   {
