@@ -22,9 +22,10 @@ Route::get('/', function () {
      ]); 
 });
 
-Route::get('posts/{post}', function ($slug) {
+Route::get('posts/{post:slug}', function (Post $post) { //Post::where('slug', $post)->firstor fail()
        return view('post', [
-        'post' =>  Post::findOrFail($slug)
+        'post' => $post
+        # Post::findOrFail($id)
     ]);
 });
 //->where('post', '[A-z_\-]+');  //is the regex, however using layouts means this is not necessary.
