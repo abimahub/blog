@@ -28,6 +28,13 @@ Route::get('posts/{post:slug}', function (Post $post) { //Post::where('slug', $p
         # Post::findOrFail($id)
     ]);
 });
+
+Route::get('categories/{category:slug}', function(Category $category)
+{
+  return view('posts', [
+    'posts'=>$category->posts
+  ]);
+});
 //->where('post', '[A-z_\-]+');  //is the regex, however using layouts means this is not necessary.
 // this works fine but is not the most elegant solution
 // set out what you want to do in a comment, then craft the code to fit that comment:

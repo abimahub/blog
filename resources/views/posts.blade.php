@@ -8,7 +8,8 @@
         </a>
        </h1>
        <div> 
-            {{ $post->excerpt }}
+         <p> <a href="/categories/{{$post->category->slug}}">{{$post->category->name}}</a></p>
+            <p>{{ $post->excerpt }}</p>
          </div>
     </article>
     @endforeach
