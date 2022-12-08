@@ -9,8 +9,7 @@
       </div>
     </article>
    <br><br>
-   <footer> <sub>Filler text from <a href="www.fillerama.io">fillerama.io</a></sub>
-   <br><br><a href="/">Go Back</a>
+   <footer> <sub><a href="/">Go Back</a></sub>
   </footer>
     
   </x-layout>  
