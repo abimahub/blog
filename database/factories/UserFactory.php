@@ -4,6 +4,9 @@ namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
+use database\factories\PostFactory;
+use database\factories\CategoryFactory;
+use App\Models\User;
 
 class UserFactory extends Factory
 {
