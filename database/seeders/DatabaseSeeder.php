@@ -31,6 +31,8 @@ class DatabaseSeeder extends Seeder
             'user_id' => $user->id
          ]);
 
+         
+
         // $user = User::factory()->create();
 
         // Category::create([

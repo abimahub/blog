@@ -64,8 +64,7 @@
           <div class="col-md-6">
             
             {{$slot}}
-<br> <p><a class="btn btn-outline-primary" href="#" role="button">All Posts &raquo;</a></p>
-          </div>
+<br>   </div>
           <div class="col-md-3">
              </div>
         </div>
@@ -76,6 +75,6 @@
     
      </main> 
       <footer class="container img2 text-white text-center">
-      <p>&copy; AbiMA 2022</p>
+      <p class="text-center">&copy; AbiMA 2022</p>
     </footer>
-    </body>`
+    </body>
