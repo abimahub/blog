@@ -31,5 +31,5 @@ a:link {
 article + article {
     margin-top: 3rem;
     border-top:1px solid #031987;
-    padding-top 2rem;
+    padding-top: 2rem;
 }
