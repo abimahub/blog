@@ -8,8 +8,8 @@ body {
    }
 .img {
     
-    width: 400px;
-    height: 200px;
+    width: 800px;
+    height: 300px;
     background-image: url(img/pexels-pok-rie-139975.jpg);
     background-repeat: no-repeat;
 }

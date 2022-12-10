@@ -16,6 +16,18 @@
 
       <div class="collapse navbar-collapse" id="navbar">
         <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+            <a class="nav-link btn btn-outline-dark text-dark" href="#">Log In</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-outline-dark text-dark" href="#">Register</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-outline-dark text-dark" href="#">Contact Me</a>
+          </li>
+          <li>
+            <a class="nav-link text-dark" href="#">¦</a>
+          </li>
           <li class="nav-item active">
             <a class="nav-link text-secondary" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
@@ -23,11 +35,13 @@
             <a class="nav-link text-dark" href="#">All Posts</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-dark" href="#">Genres</a>
+            <a class="nav-link text-dark" href="#">All Genres</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-dark" href="#">Authors</a>
+            <a class="nav-link text-dark" href="#">All Authors</a>
           </li>
+          
+          
         </ul>
       </div>
     </nav>
@@ -37,22 +51,22 @@
       <div class="jumbotron">
         <div class="container img text-light">
           <h1 class="display-3">Hello!</h1>
-          <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-          <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+          <h3>This is a simple blog website I have created using Laravel.
+          <br><br><a class="btn btn-primary text-white btn-lg" href="#" role="button">About Me &raquo;</a></h3>
         </div>
       </div> <!--end of jumbotron-->
-      <br>
+      <br><hr>
       <div class="container">
-        <div class="row bg-light text-center text-primary"> <h4>Latest Posts </h4></div>
+        <div class="row bg-light text-center text-primary"> <h4 class="display-5">Latest Posts </h4></div>
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-3">
              </div>
-          <div class="col-md-4">
+          <div class="col-md-6">
             
             {{$slot}}
-<br> <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+<br> <p><a class="btn btn-outline-primary" href="#" role="button">All Posts &raquo;</a></p>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-3">
              </div>
         </div>
 
