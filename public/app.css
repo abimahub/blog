@@ -13,6 +13,12 @@ body {
     background-image: url(img/pexels-pok-rie-139975.jpg);
     background-repeat: no-repeat;
 }
+.img2 {
+    width: 800px;
+    height: 200px;
+    background-image: url(img/pexels-jesse-zheng-732547.jpg);
+    background-repeat: no-repeat;
+}
 
 p {
     line-height: 1.2;
@@ -22,13 +28,12 @@ p {
 
 footer {
     font-size: 1rem;
-    text-align: center;
 }
 a:link {
     color: #031987;
 
 }
-article + article {
+article {
     margin-top: 3rem;
     border-top:1px solid #031987;
     padding-top: 2rem;

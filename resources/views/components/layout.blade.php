@@ -26,16 +26,16 @@
             <a class="nav-link btn btn-outline-dark text-dark" href="#">Contact Me</a>
           </li>
           <li>
-            <a class="nav-link text-dark" href="#">¦</a>
+            <a class="nav-link text-dark" href="#">|</a>
           </li>
           <li class="nav-item active">
             <a class="nav-link text-secondary" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-dark" href="#">All Posts</a>
+            <a class="nav-link text-dark" href="#">All Posts </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-dark" href="#">All Genres</a>
+            <a class="nav-link text-dark" href="#"></>All Genres</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-dark" href="#">All Authors</a>
@@ -75,7 +75,7 @@
 
     
      </main> 
-      <footer class="container">
+      <footer class="container img2 text-white text-center">
       <p>&copy; AbiMA 2022</p>
     </footer>
     </body>`
