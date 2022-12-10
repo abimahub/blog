@@ -1,13 +1,18 @@
 body {
+    padding-top: 3.5rem;
     font-size: 1.5rem;
     font-family: sans-serif;
     color: #031987;
     text-align: center;
     margin: auto;
-    background: rgb(213,213,241);
-    background: radial-gradient(circle, rgba(213,213,241,1) 42%, rgba(150,162,245,1) 90%, rgba(63,94,251,1) 100%);     
+   }
+.img {
+    
+    width: 400px;
+    height: 200px;
+    background-image: url(img/pexels-pok-rie-139975.jpg);
+    background-repeat: no-repeat;
 }
-
 
 p {
     line-height: 1.2;
