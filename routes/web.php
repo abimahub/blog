@@ -21,9 +21,9 @@ use Illuminate\Support\Facades\File;
 
 Route::get('/', function () {
     return view('posts', [
-          'posts' => Post::latest()->with('category', 'author')->get()
+          'posts' => Post::latest()->get()
      ]); 
-});
+})->name('home');
 
 Route::get('posts/{post:slug}', function (Post $post) { //Post::where('slug', $post)->firstor fail()
        return view('post', [
@@ -35,17 +35,19 @@ Route::get('posts/{post:slug}', function (Post $post) { //Post::where('slug', $p
 Route::get('register', [RegisterController::class, 'create']);
 Route::post('register', [RegisterController::class, 'store']);
 
-Route::get('categories/{category:slug}', function(Category $category)
+Route::get('categories/{category:slug}', function (Category $category)
 {
   return view('posts', [
-    'posts'=>$category->posts->load(['category', 'author'])
+    'posts'=>$category->posts,
+    'currentCategory' => $category,
+    'categories' => Category::all()
   ]);
-});
+})->name('category');
 
 Route::get('authors/{author}', function(User $author)
 {
   return view('posts', [
-    'posts'=>$author->posts->load(['category', 'author'])
+    'posts'=>$author->posts
   ]);
 });
 
