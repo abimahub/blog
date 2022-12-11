@@ -47,7 +47,7 @@
     </nav>
   <main role="main">
   
-      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <!-- jumbotron -->
       <div class="jumbotron">
         <div class="container img text-light">
           <h1 class="display-3">Hello!</h1>
