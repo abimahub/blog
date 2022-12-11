@@ -57,8 +57,7 @@
       </div> <!--end of jumbotron-->
       <br><hr>
       <div class="container">
-        <div class="row bg-light text-center text-primary"> <h4 class="display-5">Latest Posts </h4></div>
-        <div class="row">
+         <div class="row">
           <div class="col-md-3">
              </div>
           <div class="col-md-6">

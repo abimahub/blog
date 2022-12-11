@@ -3,6 +3,7 @@
 use App\Models\Post;
 use App\Models\Category;
 use App\Models\User;
+use App\Http\Controllers\RegisterController;
 use Spatie\YamlFrontMatter\YamlFrontMatter;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\File;
@@ -30,6 +31,8 @@ Route::get('posts/{post:slug}', function (Post $post) { //Post::where('slug', $p
         # Post::findOrFail($id)
     ]);
 });
+
+Route::get('register', [RegisterController::class, 'create']);
 
 Route::get('categories/{category:slug}', function(Category $category)
 {

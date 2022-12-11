@@ -1,5 +1,6 @@
 <x-layout>
-
+ <div class="row bg-light text-center text-primary"> <h4 class="display-5">Latest Posts </h4></div>
+      
      @foreach ($posts as $post) 
     <article>
       <h1>
