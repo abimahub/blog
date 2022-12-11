@@ -33,6 +33,7 @@ Route::get('posts/{post:slug}', function (Post $post) { //Post::where('slug', $p
 });
 
 Route::get('register', [RegisterController::class, 'create']);
+Route::post('register', [RegisterController::class, 'store']);
 
 Route::get('categories/{category:slug}', function(Category $category)
 {

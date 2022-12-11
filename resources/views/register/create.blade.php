@@ -4,6 +4,7 @@
       <div class="container-fluid bg-light">
         <div class="row text-center text-primary"> <h4 class="display-5">Register Here!</h4></div>
         <form method="POST" action="/register">
+        @csrf
          <div class="d-flex flex-column p-2 mb-6">
            <label class="block mb-2 text-secondary text-center"
              for="username">username</label>
@@ -18,6 +19,13 @@
                 type="text"
                 name="display_name"
                 id="display_name"
+                required>
+                <label class="block mb-2 text-secondary text-center"
+             for="email">email</label>
+             <input class="border border-secondary"
+                type="email"
+                name="email"
+                id="email"
                 required>
                 <label class="block mb-2 text-secondary text-center"
              for="password">password</label>
