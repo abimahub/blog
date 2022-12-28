@@ -10,7 +10,7 @@
   </head> 
     <body>
      <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light border-dark p-2">
-      <a class="navbar-brand text-primary" href="#">Abi's Blog</a>
+      <a class="navbar-brand text-primary" href="#">Recipe Finder</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
