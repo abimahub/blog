@@ -33,13 +33,13 @@
             <a class="nav-link text-secondary" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-dark" href="#">All Posts </a>
+            <a class="nav-link text-dark" href="#">All Recipes </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-dark" href="#"></>All Genres</a>
+            <a class="nav-link text-dark" href="#"></>All Categories</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-dark" href="#">All Authors</a>
+            <a class="nav-link text-dark" href="#">All Chefs</a>
           </li>
           
           
